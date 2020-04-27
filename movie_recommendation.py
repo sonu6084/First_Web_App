@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer 
 from sklearn.metrics.pairwise import cosine_similarity
 
-movies = pd.read_csv("https://raw.githubusercontent.com/codeheroku/Introduction-to-Machine-Learning/master/Building%20a%20Movie%20Recommendation%20Engine/movie_dataset.csv")
+movies = pd.read_csv("movies.csv")
 
 def title_index(title):
     return movies[movies['original_title'] == title] ['index'].values[0]
